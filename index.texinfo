@@ -1,0 +1,90 @@
+\input texinfo
+@c -*-texinfo-*-
+@c %**start of header
+@c $Id: latex2e-es.texi 279 2014-02-27 21:21:05Z vincentb1 $
+@comment %**start of header (Esto es para ejecutar Texinfo en una regiÃ³n.)
+
+@c http://www.gacetadelinux.com/es/lg/issue76/spiel.html
+@c http://www.lilypond.org/doc/v2.18/Documentation/usage/texinfo.es.html
+@setfilename docs.info
+@documentlanguage es
+@documentencoding UTF-8
+
+@settitle docs
+@c %**end of header
+@copying
+This manual is for program, version version. Copyright @copyright{} years copyright-owner.
+@quotation
+Permission is granted to creative commons, by Gustavo Magallanes-Guijón
+@end quotation
+@end copying
+@titlepage
+@title Mis documentación
+@subtitle Documentación
+@author Gustavo Magallanes-Guijón
+
+@c The following two commands
+@c start the copyright page.
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+Publicado por Gustavo Magallanes Guijón
+@end titlepage
+@c So the toc is printed in the right place.
+@contents
+
+@ifnottex
+@node Top
+@top Documentación del doctorado de Gustavo Magallanes-Guijón
+@insertcopying
+@end ifnottex
+@c ===========Inicio_Menu_Principal===================
+@menu
+* node_chapter_1::Comandos para formar el código fuente
+* node_chapter_2::Ayudas y documentos para programar en bash
+@end menu
+                                                
+@c ===========Fin_Menu_Principal===================
+
+@node node_chapter_1           
+@chapter ¿Cómo trabajar este documento?           
+                                                
+@menu                                           
+* node_section_1::                           
+@end menu                                       
+                                                
+@node node_section_1
+@section Comandos básicos
+
+@menu
+* node_subsection_1::
+@end menu
+
+@node node_subsection_1 
+@subsection Compilar para html
+
+@verbatim
+
+texi2html docs.texinfo
+
+@end verbatim 
+@c =======================Inicio
+@node node_chapter_2           
+@chapter Todo lo que hay que saber de Bash           
+                                                
+@menu                                           
+* node_section_2::                           
+@end menu                                       
+                                                
+@node node_section_2
+@section Comandos básicos
+
+@menu
+* node_subsection_2::
+@end menu
+
+@node node_subsection_2 
+@subsection Programación
+
+
+@bye
